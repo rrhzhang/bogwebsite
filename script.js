@@ -27,7 +27,7 @@ document.addEventListener('mousemove', function(event) {
     const cardCenterY = cardRect.top + cardRect.height / 2;
     const deltaX = cardCenterX - mouseX;
     const deltaY = cardCenterY - mouseY;
-    const forceFactor = 50;
+    const forceFactor = 20;
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     const moveX = (deltaX / distance) * forceFactor;
     const moveY = (deltaY / distance) * forceFactor;

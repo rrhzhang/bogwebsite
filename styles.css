@@ -76,13 +76,23 @@ body {
     width: 100%;
     height: auto;
     border: 5px solid black;
-    transition: border-color 0.4s;
+    transition: border-color 0.5s;
     box-sizing: border-box;
     cursor: pointer;
 }
 
+@keyframes rainbowBorder {
+    0% { border-color: red; }
+    16% { border-color: orange; }
+    33% { border-color: yellow; }
+    50% { border-color: green; }
+    66% { border-color: blue; }
+    83% { border-color: indigo; }
+    100% { border-color: violet; }
+}
+
 .pfp:hover {
-    border-color: #C0C0C0;
+    animation: rainbowBorder 1.75s linear infinite;
 }
 
 .overlay {
@@ -123,6 +133,32 @@ button:hover {
 #moreInfo.visible {
     display: block;
     animation: fadeIn .5s ease-in-out;
+}
+
+#togglebtn, #resumeBtn {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#github img {
+    width: 60px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+#linkedin img {
+    margin-right: 12px;
+    width:32 px;
+    height: 32px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#linkedin, #github {
+    text-decoration: none;
+    margin-right: -5px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 @keyframes fadeIn {
