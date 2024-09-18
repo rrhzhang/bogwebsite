@@ -72,6 +72,14 @@ body {
     margin-right: 20px;
 }
 
+#email {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 14px;
+    font-family: 'Courier New';
+}
+
 .pfp {
     width: 100%;
     height: auto;
@@ -123,6 +131,20 @@ button {
 
 button:hover {
     background-color: #C0C0C0;
+}
+
+#contactInfo {
+    display: none;
+    margin-top: 20px;
+}
+
+#contactInfo.visible {
+    display: block;
+    animation: fadeIn .5s ease-in-out;
+}
+
+button {
+    margin-right: 15px;
 }
 
 #moreInfo {

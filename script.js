@@ -1,7 +1,25 @@
+document.getElementById('contactbtn').addEventListener('click', function() {
+    const contactInfo = document.getElementById('contactInfo');
+    const moreInfo = document.getElementById('moreInfo');
+
+    if (moreInfo.classList.contains('visible')) {
+        moreInfo.classList.remove('visible');
+    }
+
+    contactInfo.classList.toggle('visible');
+});
+
 document.getElementById('togglebtn').addEventListener('click', function() {
     const moreInfo = document.getElementById('moreInfo');
+    const contactInfo = document.getElementById('contactInfo');
+
+    if (contactInfo.classList.contains('visible')) {
+        contactInfo.classList.remove('visible');
+    }
+    
     moreInfo.classList.toggle('visible');
 });
+
 
 document.getElementById('baseImg').addEventListener('click', function() {
     const overlayImg = document.getElementById('overlayImg');
