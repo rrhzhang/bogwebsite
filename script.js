@@ -62,3 +62,15 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+window.onload = function() {
+    const contactInfo = document.getElementById('contactInfo');
+    const moreInfo = document.getElementById('moreInfo');
+
+    if (contactInfo.classList.contains('visible')) {
+        contactInfo.classList.remove('visible');
+    }
+    if (moreInfo.classList.contains('visible')) {
+        moreInfo.classList.remove('visible');
+    }
+};
