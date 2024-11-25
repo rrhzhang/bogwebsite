@@ -1,3 +1,3 @@
 # website
 personal website
-https://rrhzhang.github.io/website/
+https://rrhzhang.github.io/bogwebsite/
